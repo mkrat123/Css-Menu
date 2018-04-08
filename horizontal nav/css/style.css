@@ -1,0 +1,119 @@
+body {
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  padding: 20px 50px 150px;
+}
+
+.nav {
+  text-align: left;
+ 
+  list-style: none;
+  padding: 0px;
+  position: relative;
+  -webkit-box-shadow: 5px 2px 7px rgba(0, 0, 0, 0.15);
+  -moz-box-shadow: 5px 2px 7px rgba(0, 0, 0, 0.15);
+  box-shadow: 5px 2px 7px rgba(0, 0, 0, 0.15);
+}
+
+.nav > li {
+ float: left;
+  background: #FFFFFF;
+  display: block;
+  font-size: 14px;
+  padding: 15px 5px 15px 15px;
+  cursor: pointer;
+  font-weight: bold;
+  border-bottom: 1px solid #DCDCDC;
+}
+
+.nav > li:hover {
+  background: #E6E6E6;
+  color: #1B75C4;
+}
+
+.nav > li:nth-child(-n+3){
+  border-bottom: 4px solid #FFC50A;
+}
+
+.nav > li:nth-child(-n+3):hover{
+  border-bottom: 4px solid #cc9e08;
+}
+
+.nav > li:nth-child(n+4){
+  border-bottom: 4px solid #74BF44;
+}
+
+.nav > li:nth-child(n+4):hover{
+  border-bottom: 4px solid #5d9936;
+}
+
+.nav > li:nth-child(n+7) {
+  border-bottom: 4px solid #0097D1;
+}
+
+.nav > li:nth-child(n+7):hover {
+  border-bottom: 4px solid #0079a7;
+}
+
+.arrow {
+  float: right;
+  padding: 0px 10px
+}
+
+.nav > li > ul {
+  border: 1px solid #CCCCCC;
+  padding: 0;
+  position: absolute;
+  top: 45px;
+left:0px;
+  width: 503px;
+  padding: 10px 0px 20px 20px;
+  opacity: 0;
+  visibility: hidden;
+  background: #ffffff;
+}
+
+.nav > li:hover ul {
+  display: block;
+  opacity: 1;
+  visibility: visible;
+  -webkit-transition: opacity .5s ease-in-out;
+       -moz-transition: opacity .5s ease-in-out;
+        -ms-transition: opacity .5s ease-in-out;
+         -o-transition: opacity .5s ease-in-out;
+            transition: opacity .5s ease-in-out;
+}
+
+.nav > li > ul > li { 
+  position: relative;
+  width: 145px;
+  padding: 0;
+  display: inline-block;
+  margin-right: 20px;
+  color: #555;
+  cursor:default;
+  font-weight: 300;
+  vertical-align: top;
+}
+
+.nav > li > ul > li > ul { 
+  list-style: none;
+  padding: 0px !important;
+  vertical-align: top;
+}
+
+.nav > li > ul > li > ul > li { 
+  margin-bottom: 7px;
+}
+
+h4 {
+  margin: 7px 0px 12px;
+}
+
+hr {
+  width: 483px;
+  margin: 0px;
+  border: 0px;
+  height: 1px;
+  background: #CCCCCC;
+  margin-bottom: 10px;
+}
